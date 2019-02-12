@@ -12,15 +12,28 @@
 </head>
 
 <body>
-
+  <section class="container-fluid bg-primary text-center text-white">
+    <div class="row">
+      <div class="col-12">
+        <h1>Pick an item!</h1>
+      </div>
+    </div>
+  </section>
   <section class="container-fluid">
-    <div class="row text-center" id="draw-vm"></div>
+    <div class="row text-center d-flex align-items-end mt-5 mx-auto" id="draw-vm"></div>
     <div class="row text-center">
       <div class="col">
         <h1 class="mt-5">Balance: $<span id="bal">_</span></h1>
         <button onclick="app.controllers.venderController.addMoney(.1)" class="btn btn-info">Dime</button>
         <button onclick="app.controllers.venderController.addMoney(.25)" class="btn btn-info">Quarter</button>
         <button onclick="app.controllers.venderController.addMoney(1)" class="btn btn-info">Dollar</button>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col my-3">
+        <h2 id="results">_
+
+        </h2>
       </div>
     </div>
   </section>
